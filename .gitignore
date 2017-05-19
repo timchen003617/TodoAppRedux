@@ -1,0 +1,22 @@
+# mac misc
+.DS_Store
+
+# node modules
+/node_modules
+
+# build folder
+/local
+/dist
+
+# log files
+/*.log
+
+# env file
+.env
+
+# ide files
+/.vscode
+/.settings/
+/bin/
+/build/
+/WebContent/
