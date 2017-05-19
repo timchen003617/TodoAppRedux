@@ -6,6 +6,6 @@
     ],
   "plugins": [
     "react-hot-loader/babel"
-    // 开启 React 代码的模块热替换(HMR)
+    // 開啟 React 代码的模块热替换(HMR)
   ]
 }
