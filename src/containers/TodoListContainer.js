@@ -4,7 +4,6 @@ import TodoActions from 'actions/TodoActions'
 import TodoList from 'components/TodoList'
 
 class TodoListContainer extends React.Component {
-
   render () {
     const {
       todos,

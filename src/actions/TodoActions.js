@@ -1,7 +1,6 @@
+// Action Creators
 import fetch from 'isomorphic-fetch'
 import ActionTypes from 'constants/ActionTypes'
-
-
 
 const loadTodos = () => {
   return (dispatch) => {
@@ -51,7 +50,6 @@ const deleteTodo = (id) => {
   }
   return action
 }
-
 
 export default {
   loadTodos,
