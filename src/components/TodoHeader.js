@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class TodoHeader extends React.Component {
   render () {
@@ -11,9 +12,9 @@ class TodoHeader extends React.Component {
 }
 // 1. 使用 propTypes 定義參數的型別
 TodoHeader.propTypes = {
-  name: React.PropTypes.string,
-  username: React.PropTypes.string,
-  todoCount: React.PropTypes.number
+  name: PropTypes.string,
+  username: PropTypes.string,
+  todoCount: PropTypes.number
 }
 
 // 2. 使用 defaultProps 定義參數的預設值

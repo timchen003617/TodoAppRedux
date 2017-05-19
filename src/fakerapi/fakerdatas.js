@@ -14,7 +14,7 @@ const fakerdatas = () => {
   data.todoList.push(
     {
       'id': 0,
-      'title': faker.lorem.sentence(),
+      'title': '閱讀',
       'completed': false
     }
   )
@@ -22,7 +22,7 @@ const fakerdatas = () => {
   data.todoList.push(
     {
       'id': 1,
-      'title': faker.lorem.sentence(),
+      'title': '慢跑',
       'completed': true
     }
   )
