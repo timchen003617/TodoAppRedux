@@ -1,7 +1,6 @@
 import ActionTypes from 'constants/ActionTypes'
 
 const createTodo = (todos, title) => {
-  console.log(todos)// old todos [todo1,todo2,...]
   if (todos.length === 0) {
     return [...todos, { // new todo
       id: 0,

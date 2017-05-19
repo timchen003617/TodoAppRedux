@@ -5,8 +5,7 @@ import ActionTypes from 'constants/ActionTypes'
 const loadTodos = () => {
   return (dispatch) => {
     fetch('http://localhost:3004/todoList')
-      .then((response) => response.json()).then(todos => new Promise(function (resolve) {
-        console.log(todos)
+      .then((response) => response.json()).then(todos => new Promise((resolve) => {
         return resolve(todos)
       }))
       .then((todos) => dispatch({
