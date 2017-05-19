@@ -65,9 +65,9 @@ module.exports = {
     host: 'localhost',
     port: 3000,
     contentBase: resolve(__dirname, 'dist'),
-    // 输出文件的路径    
+    // 输出文件的路径
     historyApiFallback: true,
-    //Configuring the Fallback URL for React Router
+    // Configuring the Fallback URL for React Router
     publicPath: '/'
     // 和上文 output 的“publicPath”值保持一致
   },
@@ -78,7 +78,6 @@ module.exports = {
 
     // 当模块热替换(HMR)时在浏览器控制台输出对用户更友好的模块名字信息
     new webpack.NamedModulesPlugin(),
-
 
     new webpack.DefinePlugin({
       'process.env': {
