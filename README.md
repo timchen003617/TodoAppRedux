@@ -2,7 +2,7 @@
 
 npm i(一次安裝所有套件)
 
-step1 啟動jsonserver(express server端資料): npm run start-jsonsserver
+step1 啟動jsonserver(express server端資料): npm run start-jsonserver
 
 step2 啟動專案: npm start
 
