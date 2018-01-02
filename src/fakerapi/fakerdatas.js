@@ -10,22 +10,23 @@ const faker = require('faker')
 
 faker.locale = 'zh_TW'
 const fakerdatas = () => {
-  const data = {todoList: []}
-  data.todoList.push(
+  const data = {todoList: [
     {
       'id': 0,
       'title': '閱讀',
       'completed': false
-    }
-  )
-
-  data.todoList.push(
+    },
     {
       'id': 1,
       'title': '慢跑',
-      'completed': true
+      'completed': false
+    },
+    {
+      'id': 2,
+      'title': '看電影',
+      'completed': false
     }
-  )
+  ]}
   return data
 }
 

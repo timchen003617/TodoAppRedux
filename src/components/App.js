@@ -9,7 +9,9 @@ import {
 } from 'react-router-dom'
 import Container from 'components/Container'
 import AboutContainer from 'containers/AboutContainer'
+import HomeContainer from 'containers/HomeContainer';
 import NavbarContainer from 'containers/NavbarContainer'
+import Home from './Home';
 
 const history = createHistory()
 const routes = props => (
@@ -18,7 +20,7 @@ const routes = props => (
       <Container _width='1024px'>
         <NavbarContainer />
         <hr />
-        <Route exact path='/' />
+        <Route exact path='/' component={HomeContainer}/>
         <Route path='/about' component={AboutContainer} />
         <Route path='/todoApp' component={TodoApp} />
       </Container>
