@@ -5,39 +5,38 @@ const createTodo = (todos, title) => {
     return [...todos, { // new todo
       id: 0,
       title,
-      completed: false
-    }]
-  } else {
-    return [...todos, {
-      id: todos[todos.length - 1].id + 1,
-      title,
-      completed: false
+      completed: false,
     }]
   }
+  return [...todos, {
+    id: todos[todos.length - 1].id + 1,
+    title,
+    completed: false,
+  }]
 }
 
 // 將編輯邏輯抽成一個 function
 const updateTodo = (todos, id, title) => {
-  const idx = todos.findIndex((todo) => todo.id === id)
+  const idx = todos.findIndex((todo) => { return todo.id === id })
   if (idx === -1) return todos
 
   // 2. 每次修改項目，就回傳新陣列
-  const newTodos = [ ...todos ]
+  const newTodos = [...todos]
   newTodos[idx] = {
     ...todos[idx],
-    title
+    title,
   }
   return newTodos
 }
 // 將切換邏輯抽成一個 function
 const toggleTodo = (todos, id, completed) => {
-  const idx = todos.findIndex((todo) => todo.id === id)
+  const idx = todos.findIndex((todo) => { return todo.id === id })
   if (idx === -1) return todos
 
   const newTodos = [...todos]
   newTodos[idx] = {
     ...todos[idx],
-    completed
+    completed,
   }
 
   return newTodos
@@ -45,7 +44,7 @@ const toggleTodo = (todos, id, completed) => {
 
 // 將刪除邏輯抽成一個 function
 const deleteTodo = (todos, id) => {
-  const idx = todos.findIndex((todo) => todo.id === id)
+  const idx = todos.findIndex((todo) => { return todo.id === id })
   if (idx === -1) return todos
 
   const newTodos = [...todos]

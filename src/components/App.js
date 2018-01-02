@@ -18,7 +18,7 @@ const routes = props => (
       <Container _width='1024px'>
         <NavbarContainer />
         <hr />
-        <Route path='/' />
+        <Route exact path='/' />
         <Route path='/about' component={AboutContainer} />
         <Route path='/todoApp' component={TodoApp} />
       </Container>
